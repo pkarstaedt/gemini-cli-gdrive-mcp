@@ -72,7 +72,7 @@ This is the simplest method - just provide your OAuth client ID and secret:
     "google-drive-mcp": {
       "command": "python",
       "args": ["server.py"],
-      "cwd": "path/to/gemini-cli-gdocs-mcp",
+      "cwd": "path/to/gemini-cli-gdrive-mcp",
       "env": {
         "GOOGLE_CLIENT_ID": "your-client-id.apps.googleusercontent.com",
         "GOOGLE_CLIENT_SECRET": "your-client-secret",
@@ -96,7 +96,7 @@ You can also use a credentials JSON file:
     "google-drive-mcp": {
       "command": "python",
       "args": ["server.py"],
-      "cwd": "path/to/gemini-cli-gdocs-mcp",
+      "cwd": "path/to/gemini-cli-gdrive-mcp",
       "env": {
         "GOOGLE_CREDENTIALS": "path/to/credentials.json",
         "MCP_LOG_LEVEL": "DEBUG",
@@ -119,7 +119,7 @@ If you prefer to pass credentials as a JSON string:
     "google-drive-mcp": {
       "command": "python",
       "args": ["server.py"],
-      "cwd": "path/to/gemini-cli-gdocs-mcp",
+      "cwd": "path/to/gemini-cli-gdrive-mcp",
       "env": {
         "GOOGLE_CREDENTIALS": "{\"installed\":{\"client_id\":\"...\",\"client_secret\":\"...\",\"auth_uri\":\"...\",\"token_uri\":\"...\",\"auth_provider_x509_cert_url\":\"...\",\"redirect_uris\":[\"...\"]}}"
       },
